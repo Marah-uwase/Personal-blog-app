@@ -21,8 +21,7 @@ simple = SimpleMDE()
 def create_app(config_name):
 
     app = Flask(__name__)
-    app.secret_key = os.urandom(24)
-    
+
     #Creating the app configurations
     app.config.from_object(config_options[config_name])
 
