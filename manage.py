@@ -6,7 +6,7 @@ from app.models import User, Comment, Blog
 
  
  
-app = create_app('development')
+ap = create_app('development')
 # app = create_app('production')
 
 manager = Manager(app)
