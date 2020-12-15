@@ -6,7 +6,8 @@ class Config:
     '''
    
     SECRET_KEY = ('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/blogapp'
+    SECRET_KEY = 'SECRET_KEY'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/bloggs'
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     UPLOADED_PHOTOS_DEST = 'app/static/photos'
@@ -40,7 +41,7 @@ class ProdConfig(Config):
     
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/blogapp_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/bloggs_test'
 
 
 class DevConfig(Config):
@@ -49,7 +50,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with general configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/blogapp'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://maranatha:marah@localhost/bloggs'
 
     DEBUG = True
 
